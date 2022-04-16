@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,500&family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,500&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    background: rgb(129, 18, 129);;
+    color: #f9f9f9;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #1e1e1e;
+}
+body::-webkit-scrollbar {
+    width: 14px;  
+}
+body::-webkit-scrollbar-track {
+    background: #2b2a2a;   
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(250, 59, 250);;   
+    border: 3px solid rgb(250, 59, 250);;  
+}
+header{
+    background-color: rgb(129, 18, 129);
+    display: flex;
+    width: 100%;
+}
+header h1{
+    color: #f9f9f9;
+    font-size: 9vmin;
+    padding: 24px 0;
+    align-items: center;
+    -webkit-text-stroke: 2px #1e1e1e;
+    text-stroke: 2px #1e1e1e;
+}
+main{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+main section{
+    width: 60%;
+}
+main section img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 0.8em rgb(124, 123, 123);
+}
+main aside{
+    width: 30%;
+}
+main aside .title{
+    color: rgb(250, 59, 250);
+    font-size: 6vmin;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+main aside p, main aside li{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+main aside .infoType{
+    text-decoration: underline;
+    text-decoration-color: rgb(250, 59, 250);;
+}
+main aside ul{
+    margin: 0 25px;
+}
+.containerText{
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+}
+.textEfect::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+.textEfect:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.textEfect::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(129, 18, 129);;
+    border-radius: 4px;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+.textEfect{
+    color: white;
+    position: relative;
+    font-size: 3.7vmin;
+    padding: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+article{
+    width: 95%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+article section{
+    width: 22%;
+    height: 50vmin;
+    background-color: #2b2a2a;
+    box-shadow: 0 0 0.3em rgb(105, 105, 105);
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease;
+}
+article section:hover{
+    transform: scale(1.1);
+}
+article section img{
+    width: 100%;
+    height: 60%
+}
+article section p{
+    width: 90%;
+}
+article section .placeName {
+    font-size: 2.5vmin;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #f9f9f9
+}
+article section .placeLocation {
+    padding-top: 10px;
+}
+@media screen and (max-width: 900px){
+    main{
+        flex-direction: column;
+    }
+    main section{
+        width: 80%;
+    }
+    main aside{
+        width: 80%;
+        margin-top: 30px;
+    }
+    article{
+        width: 100%
+    }
+    article section{
+        width: 24%;
+    }
+}
+@media screen and (max-width: 650px){
+    body{
+        background-color: black;
+    }
+    article{
+        width: 80%;
+        flex-direction: column
+    }
+    article section{
+        width: 80%;
+        height: 70vmin;
+        margin: 30px auto;
+        box-shadow: 0 0 0.5em #ccc;
+    }
+
+    article section .placeName {
+        font-size: 3.5vmin;
+        margin-top: 20px;
+ 
+    }
+    article section .placeLocation {
+        font-size: 3vmin;
+    }
+}
