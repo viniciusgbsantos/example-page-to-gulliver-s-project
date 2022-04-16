@@ -165,9 +165,6 @@ article section .placeLocation {
     }
 }
 @media screen and (max-width: 650px){
-    body{
-        background-color: black;
-    }
     article{
         width: 80%;
         flex-direction: column
