@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 *::selection {
-    background: rgb(129, 18, 129);;
+    background: rgb(129, 18, 129);
     color: #f9f9f9;
 }
 body {
@@ -23,8 +23,8 @@ body::-webkit-scrollbar-track {
     background: #2b2a2a;   
 }
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(250, 59, 250);;   
-    border: 3px solid rgb(250, 59, 250);;  
+    background-color: rgb(250, 59, 250);
+    border: 3px solid rgb(250, 59, 250);  
 }
 header{
     background-color: rgb(129, 18, 129);
@@ -69,7 +69,7 @@ main aside p, main aside li{
 }
 main aside .infoType{
     text-decoration: underline;
-    text-decoration-color: rgb(250, 59, 250);;
+    text-decoration-color: rgb(250, 59, 250);
 }
 main aside ul{
     margin: 0 25px;
@@ -98,7 +98,7 @@ main aside ul{
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: rgb(129, 18, 129);;
+    background: rgb(129, 18, 129);
     border-radius: 4px;
     z-index: -1;
     transition: transform .3s ease;
